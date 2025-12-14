@@ -17,12 +17,11 @@ const indes = () => {
     },
   ]
   return (
-    <div>indes
-
+    <div>
       {post.map((post) => {
         return (
           <div key={post.id} className="flex items-center justify-around">
-            <a href={`/blog/${post.id}`}> <h2> {post.title} </h2></a>
+            <a href={`/pages/${post.id}`}> <h2 className="cursor-pointer"> {post.title} </h2></a>
             <p> {post.post} </p>
           </div>
         )
